@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <span>Hola mundo!</span>
-    </body>
+
+<head></head>
+
+<body>
+    <span>Hola mundo!</span>
+    <script>
+        //this
+        //alt + shift + f
+        const obj = {
+            funcionNormal: function () {
+                console.log('función normal', this);
+            },
+            funcionFlecha: () => {
+                console.log('función flecha', this);
+            }
+        }
+
+        console.log('this.del ambiente', this);
+        //hace referencia al objeto que hizo la invocación
+        obj.funcionNormal();
+        //coge el ambiente donde fue definada la función
+        obj.funcionFlecha();
+    </script>
+</body>
+
 </html>
