@@ -27,6 +27,10 @@ class Cuadrado extends Rectangulo {
     area(){
         console.log(`El área del cuadrado es ${this.lado * this.lado}`);
     }
+
+    static miFuncionEstatica() {
+        console.log('Function static');
+    }
 }
 const cuadrado1 = new Cuadrado(2);
 cuadrado1.area();
@@ -37,4 +41,5 @@ figura1.area =  function(){
 }
 figura1.area();
 
-//funciones estaticas
+//funciones estaticas: una funcion estatica es aquella que se puede invocar a través de la clase y no a través de una instancia
+Cuadrado.miFuncionEstatica();
