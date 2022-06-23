@@ -9,7 +9,7 @@ console.log(masNumeros);
 const masNumerosMismo = [1, ...numeros];
 console.log(masNumerosMismo);
 
-const otrosNumeros = [4,5];
+const otrosNumeros = [4, 5];
 const concatenar = [...numeros, ...otrosNumeros];
 console.log(concatenar);
 
@@ -31,3 +31,8 @@ const edadPersona = {
     edad: 22
 }
 console.log('personaEdad', edadPersona);
+
+//destructurando
+const { edad, ...persona4 } = edadPersona;
+console.log('edad', edad);
+console.log('persona4', persona4);
