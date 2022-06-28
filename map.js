@@ -21,3 +21,9 @@ const nombresPaises = personas.map(persona => {
 console.log('Nombre y Paises', nombresPaises);
 
 //map para crear código HTML
+const divs = nombresPaises.map(persona => `
+<div>
+    <span>${persona.nombre}</span> (país: ${persona.pais})
+</div>
+`);
+console.log(divs);
